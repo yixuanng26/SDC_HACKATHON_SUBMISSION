@@ -1,9 +1,13 @@
 import runpod
 
 def handler(job: dict) -> dict:
-    prompt = job.get("input", {}).get("prompt", "")
-    
-    ai_response = {
+    # 1. Extract input sent from your Replit app
+    job_input = job.get("input", {})
+    prompt = job_input.get("prompt", "")
+
+    # 2. Process the input using your app's logic
+    # Replace this section with your actual function output
+    result_data = {
         "status": "success",
         "user_query": prompt,
         "recommendation": {
@@ -14,7 +18,8 @@ def handler(job: dict) -> dict:
             "suggested_next_step": "Complete the 'Build SQL foundations' quest."
         }
     }
-    
-    return {"output": ai_response}
+
+    # 3. Return the result back to Replit
+    return {"output": result_data}
 
 runpod.serverless.start({"handler": handler})
