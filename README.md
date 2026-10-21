@@ -32,7 +32,7 @@
 | **Live Demo** | `https://your-project.replit.app` |
 | **Demo / Pitch Video** | `https://example.com/demo-video` |
 | **Slide Deck** | `https://example.com/slides` |
-| **RunPod Endpoint** | `https://api.runpod.ai/v2/rg88ptje13dkwa/runsync` |
+| **RunPod Endpoint** | ([https://api.runpod.ai/v2/rg88ptje13dkwa/runsync](mailto:https://api.runpod.ai/v2/rg88ptje13dkwa/runsync)) |
 
 ---
 
