@@ -10,6 +10,7 @@ def summarize(values: list[float]) -> dict:
     """Return basic statistics for a list of numbers."""
     if not values:
         return {"count": 0, "min": None, "max": None, "average": None}
+    
     return {
         "count": len(values),
         "min": min(values),
