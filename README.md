@@ -50,10 +50,10 @@
 
 | Layer | Technology |
 | :--- | :--- |
-| Frontend | e.g. HTML, React |
-| Backend | e.g. Python, Flask / FastAPI |
-| Database | e.g. PostgreSQL, SQLite |
-| AI / Compute | RunPod (GPU) |
+| Frontend | e.g. Vite, React |
+| Backend | e.g. Python, Flask |
+| Database | e.g. N/A |
+| AI / Compute | RunPod (GPU), Deepseek |
 | Hosting / Dev | Replit |
 
 ## Project Structure
