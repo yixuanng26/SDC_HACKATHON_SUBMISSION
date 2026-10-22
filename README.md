@@ -155,7 +155,7 @@ curl -X POST [https://api.runpod.ai/v2/$RUNPOD_ENDPOINT_ID/runsync](https://api.
   -d '{"input": {"prompt": "Hello"}}'
 ```
 
-📄 Proof of use: [submission/SDC2026_YourTeamName_Runpod_POU.pdf](submission/SDC2026_YourTeamName_Runpod_POU.pdf)
+📄 Proof of use: ([submission/SDC2026_ByteMe_Runpod_POU.pdf](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION/blob/main/submission/SDC2026_ByteMe_Runpod_POU.pdf))
 
 ## Challenges & Learnings
 
