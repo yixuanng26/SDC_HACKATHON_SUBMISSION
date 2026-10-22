@@ -20,7 +20,7 @@ def call_deepseek_chat(user_message):
     }
     payload = {
         "input": {
-            "prompt": f"You are a helpful AI Career Coach. Answer concisely.\nUser: {user_message}\nCoach:"
+            "prompt": user_message
         }
     }
     try:
