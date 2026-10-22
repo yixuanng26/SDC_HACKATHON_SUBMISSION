@@ -103,8 +103,8 @@ User ⟶ Replit (App / API) ⟶ RunPod Endpoint (GPU model)
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/你的用户名/你的项目名.git](https://github.com/你的用户名/你的项目名.git)
-cd 你的项目名
+git clone [https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION.git](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION.git)
+cd SDC_HACKATHON_SUBMISSION
 
 # 2. Create and activate a virtual environment
 python -m venv venv
@@ -117,7 +117,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # 4. Configure environment variables
-# (根据需要写上复制 .env.example 并配置 key 的步骤)
+# Copy the example environment file to .env
+cp .env.example .env    # On macOS/Linux
+# copy .env.example .env # On Windows
+
+# Open .env and replace the placeholders with actual API keys.
 
 # 5. Run the app
 python src/main.py
@@ -128,7 +132,7 @@ python src/main.py
 ```bash
 python -m unittest discover tests
 ```
-## How We Use Replit *(Required)*
+## How We Use Replit 
 
 Describe how your team used Replit. For example:
 
@@ -136,9 +140,9 @@ Describe how your team used Replit. For example:
 - **Hosting:** The app is deployed with Replit Deployments at the Live Demo link above.
 - **Secrets:** API keys are stored in Replit Secrets, never in the code.
 
-📄 Proof of use: [submission/SDC2026_YourTeamName_Replit_POU.pdf](submission/SDC2026_YourTeamName_Replit_POU.pdf)
+📄 Proof of use: [submission/SDC2026_ByteMe_Replit_POU.pdf](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION/blob/main/submission/SDC2026_ByteMe_Replit_POU.pdf)
 
-## How We Use RunPod *(Required)*
+## How We Use RunPod  
 
 Describe how your team used RunPod. For example:
 
@@ -149,13 +153,13 @@ Describe how your team used RunPod. For example:
 Example request:
 
 ```bash
-curl -X POST [https://api.runpod.ai/v2/$RUNPOD_ENDPOINT_ID/runsync](https://api.runpod.ai/v2/$RUNPOD_ENDPOINT_ID/runsync) \
-  -H "Authorization: Bearer $RUNPOD_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"input": {"prompt": "Hello"}}'
+curl -X POST https://api.runpod.ai/v2/rg88ptje13dkwa/runsync \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer YOUR_API_KEY' \
+    -d '{"input":{"prompt":"Write a short poem about artificial intelligence."}}'
 ```
 
-📄 Proof of use: ([submission/SDC2026_ByteMe_Runpod_POU.pdf](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION/blob/main/submission/SDC2026_ByteMe_Runpod_POU.pdf))
+📄 Proof of use: [submission/SDC2026_ByteMe_Runpod_POU.pdf](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION/blob/main/submission/SDC2026_ByteMe_Runpod_POU.pdf)
 
 ## Challenges & Learnings
 
