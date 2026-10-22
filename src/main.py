@@ -10,7 +10,6 @@ CORS(app)
 RUNPOD_API_KEY = os.environ.get("RUNPOD_API_KEY")
 DEEPSEEK_ENDPOINT_ID = os.environ.get("DEEPSEEK_ENDPOINT_ID")
 RUNPOD_ENDPOINT_ID = os.environ.get("RUNPOD_ENDPOINT_ID")
-RAPIDAPI_KEY = os.environ.get("RAPIDAPI_KEY")
 
 def call_deepseek_chat(user_message):
     url = f"https://api.runpod.ai/v2/{DEEPSEEK_ENDPOINT_ID}/runsync"
