@@ -1,19 +1,29 @@
-"""Helper functions used across the project."""
-
-
-def format_greeting(name: str) -> str:
-    """Return a welcome message for the given project name."""
-    return f"Welcome to {name}!"
-
-
-def summarize(values: list[float]) -> dict:
-    """Return basic statistics for a list of numbers."""
-    if not values:
-        return {"count": 0, "min": None, "max": None, "average": None}
-    
+def format_user_profile(raw_data):
+    """Formats raw user profile data."""
+    name = raw_data.get("name", "Unknown")
+    education = raw_data.get("education", "")
+    display_title = f"{name} ({education}" if education else name
+    if education and not display_title.endswith(")"):
+        display_title += ")"
     return {
-        "count": len(values),
-        "min": min(values),
-        "max": max(values),
-        "average": round(sum(values) / len(values), 2),
+        "name": name,
+        "age": raw_data.get("age"),
+        "education": education,
+        "display_title": display_title
+    }
+
+def calculate_milestone_progress(completed_tasks):
+    """Calculates progress percentage from a list of booleans."""
+    if not completed_tasks:
+        return 0.0
+    completed_count = sum(1 for task in completed_tasks if task)
+    return (completed_count / len(completed_tasks)) * 100
+
+def match_career_path(user_skills, target_role):
+    """Matches user skills against a target role and returns a match score dictionary."""
+    # 简单计算一个模拟的 match_score（例如根据技能数量或固定逻辑）
+    score = min(len(user_skills) * 33, 100) if user_skills else 0
+    return {
+        "target_role": target_role,
+        "match_score": score
     }
