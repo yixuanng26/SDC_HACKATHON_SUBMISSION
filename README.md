@@ -1,6 +1,6 @@
 # SDC_HACKATHON_SUBMISSION
 
-> An AI-powered application built for the Software Development Club (SDC) Hackathon, hosted on Replit and leveraging GPU acceleration via RunPod.
+> myfuture is an AI-powered career guidance platform designed to help working adults and fresh graduates navigate AI-driven job market changes through personalized skill assessments, career recommendations, and tailored learning pathways.
 
 ---
 
