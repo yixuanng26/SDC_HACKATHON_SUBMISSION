@@ -39,8 +39,20 @@
 ## Overview
 
 ## Problem
+Artificial Intelligence (AI) is changing the job market and affecting both working adults and fresh graduates. As AI technology continues to develop, people need to understand how these changes may affect their careers and future opportunities.
+Working adults who perform data entry and basic office tasks may face the risk of having some of their tasks automated by AI. This may change their job responsibilities and reduce the demand for certain skills. As a result, they may need to learn new skills and improve their knowledge to remain relevant in the workplace. Without proper training, they may find it difficult to adapt to changes in their jobs.
+Fresh graduates also face challenges when entering the job market. They may feel uncertain about which career path to choose because AI is changing job requirements and creating new skill demands. Some graduates may struggle to identify suitable jobs that match their interests, abilities, and qualifications. Without proper career guidance, they may choose a career that has fewer future opportunities.
+These challenges matter because employment affects people's income, financial stability, and future development. Therefore, working adults need opportunities to improve their skills, while fresh graduates need guidance to make better career decisions.
+Our solution aims to use AI to help working adults identify skills they need to improve and help fresh graduates discover suitable future careers. By providing personalised career recommendations, future job trends, and step-by-step learning pathways, we hope to help people prepare for changes in the job market and build a more future-ready workforce.
+
 
 ## Solution
+Our proposed application is an AI-powered career guidance platform designed to help working adults and fresh graduates prepare for future job opportunities. The application uses artificial intelligence to analyse users' skills, interests, and career preferences to provide suitable career recommendations.
+The application includes a personality and skills assessment to help users understand their strengths and identify areas for improvement. It also provides information about the latest global job trends to help users understand how AI is changing the job market. Based on the assessment results, the application recommends suitable future careers and identifies the skills users need to develop. It also provides personalised learning pathways to help users improve their skills and prepare for future employment.
+To support these functions, our project will use an AI API with the model DeepSeek-R1-Distill-Qwen-7B to process information and assist in generating career-related recommendations. The AI will help analyse user inputs and provide relevant suggestions based on the available data.
+For development, we plan to use Replit to build the web application, RunPod to support API deployment, and GitHub to store and manage our source code. These technologies will help us develop a functional prototype that is accessible and easy to use.
+Our goal is to use AI to make career guidance more accessible, help users identify future opportunities, and encourage lifelong learning in support of SDG 4: Quality Education, SDG 5: Gender Equality, SDG 8: Decent Work and Economic Growth, SDG 9: Industry, Innovation And Infrastructure, SDG 10: Reduced Inequalities.
+
 
 ## Key Features
 
