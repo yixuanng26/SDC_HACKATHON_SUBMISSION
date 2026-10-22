@@ -35,6 +35,28 @@ class TestMyFutureUtils(unittest.TestCase):
         self.assertGreaterEqual(match_result["match_score"], 0)
         self.assertLessEqual(match_result["match_score"], 100)
 
+    def format_user_profile(raw_data):
+        """Formats raw user profile data."""
+        name = raw_data.get("name", "Unknown")
+        education = raw_data.get("education", "")
+        display_title = f"{name} ({education}" if education else name
+        # Make sure to close parentheses properly if needed
+        if education and not display_title.endswith(")"):
+            display_title += ")"
+        return {
+            "name": name,
+            "age": raw_data.get("age"),
+            "education": education,
+            "display_title": display_title
+        }
+
+    def calculate_milestone_progress(completed_tasks):
+        """Calculates progress percentage from a list of booleans."""
+        if not completed_tasks:
+            return 0.0
+        completed_count = sum(1 for task in completed_tasks if task)
+        return (completed_count / len(completed_tasks)) * 100
+
 
 if __name__ == "__main__":
     unittest.main()
