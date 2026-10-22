@@ -21,7 +21,6 @@ def calculate_milestone_progress(completed_tasks):
 
 def match_career_path(user_skills, target_role):
     """Matches user skills against a target role and returns a match score dictionary."""
-    # 简单计算一个模拟的 match_score（例如根据技能数量或固定逻辑）
     score = min(len(user_skills) * 33, 100) if user_skills else 0
     return {
         "target_role": target_role,
