@@ -56,7 +56,15 @@ Our goal is to use AI to make career guidance more accessible, help users identi
 
 ## Key Features
 
-* **Feature 1:** 
+* **AI Career Guidance:** Helps users discover suitable career paths aligned with their interests, technical skills, and long-term career goals.
+* **CV / Resume Import:** Provides a convenient workflow for users to quickly initialize their professional profile (currently simulated in prototype).
+* **Target Career Selection:** Enables users to select desired target roles and establish a structured career development goal.
+* **Career Match & Gap Analysis:** Performs deep side-by-side comparisons between users' existing skills and the required competencies for target roles.
+* **Personalised Learning Roadmap:** Generates actionable learning tasks, key milestones, and estimated completion timelines to bridge skill gaps.
+* **PathFinder AI Coach (Professional Advice):** Offers real-time AI career guidance and actionable next steps (unlocked via the demo checkout flow).
+* **Career Fit Assessment:** Evaluates users' role-specific knowledge and practical skills through dynamic assessments to identify growth areas.
+* **Explore Careers Taxonomy:** Allows users to explore comprehensive career options, estimated salaries, industry trends, and potential AI-driven job transformations.
+
 
 ## Tech Stack
 
