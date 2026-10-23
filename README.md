@@ -104,9 +104,19 @@ Our goal is to use AI to make career guidance more accessible, help users identi
 ## Architecture
 
 ```text
-User ⟶ Replit (App / API) ⟶ RunPod Endpoint (GPU model)
-  │
-  └─> Response returned to user
+User / Browser
+   │
+   ▼
+Replit Full-Stack App (Frontend & Backend API)
+   │
+   ├──► RunPod Serverless 1: vLLM DeepSeek-R1-Distill-Qwen-7B
+   │      └── (Handles AI Career Guidance, Assessments & Recommendations)
+   │
+   └──► RunPod Serverless 2: Wan2.2-I2V-A14B-Lightning
+          └── (Generates Custom Video Content)
+   │
+   ▼
+Response Rendered & Returned to User
 ```
 
 ## How to Run
