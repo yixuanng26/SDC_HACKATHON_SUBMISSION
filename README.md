@@ -28,8 +28,8 @@
 | Resource | Link |
 | :--- | :--- |
 | **GitHub Repository** | `https://github.com/your-username/your-project` |
-| **Replit Project** | `https://replit.com/@your-username/your-project` |
-| **Live Demo** | `https://your-project.replit.app` |
+| **Replit Project** | [https://replit.com/@yixuanng26/MyFuture-Career-Guidance](https://replit.com/@yixuanng26/MyFuture-Career-Guidance) |
+| **Live Demo** | [https://my-future-career-guidance.replit.app](https://my-future-career-guidance.replit.app) |
 | **Demo / Pitch Video** | `https://example.com/demo-video` |
 | **Slide Deck** | `https://example.com/slides` |
 | **RunPod Endpoint** | [https://api.runpod.ai/v2/rg88ptje13dkwa/runsync](mailto:https://api.runpod.ai/v2/rg88ptje13dkwa/runsync) |
