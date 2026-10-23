@@ -65,7 +65,7 @@ Our goal is to use AI to make career guidance more accessible, help users identi
 | Frontend | e.g. Vite, React |
 | Backend | e.g. Python, Flask |
 | Database | e.g. N/A |
-| AI / Compute | RunPod (GPU), Deepseek |
+| AI / Compute | RunPod (GPU), Deepseek, Gemini Plus |
 | Hosting / Dev | Replit |
 
 ## Project Structure
