@@ -79,10 +79,10 @@ Our goal is to use AI to make career guidance more accessible, help users identi
 │   ├── main.py                 # Application entry point
 │   └── utils.py                # Helper functions
 ├── submission/                 # Required submission documents
-│   ├── SDC2026_TeamName_Preliminary.pdf      # Preliminary submission
-│   ├── SDC2026_TeamName_TechDeclaration.pdf  # Technology declaration
-│   ├── SDC2026_TeamName_Replit_POU.pdf       # Replit proof of use
-│   └── SDC2026_TeamName_Runpod_POU.pdf       # RunPod proof of use
+│   ├── SDC2026_ByteMe_Preliminary.pdf      # Preliminary submission
+│   ├── SDC2026_ByteMe_TechDeclaration.pdf  # Technology declaration
+│   ├── SDC2026_ByteMe_Replit_POU.pdf       # Replit proof of use
+│   └── SDC2026_ByteMe_Runpod_POU.pdf       # RunPod proof of use
 ├── tests/
 │   └── test_utils.py           # Unit tests
 ├── .env.example                # Example environment variables
@@ -105,7 +105,7 @@ User ⟶ Replit (App / API) ⟶ RunPod Endpoint (GPU model)
 
 ### Option 1 — Run on Replit (Recommended)
 
-1. Open the [Replit Project](替换成你的Replit链接), or import this repository via **Create Repl → Import from GitHub**.
+1. Open the [https://replit.com/@yixuanng26/MyFuture-Career-Guidance](https://replit.com/@yixuanng26/MyFuture-Career-Guidance), or import this repository via **Create Repl → Import from GitHub**.
 2. Open the **Secrets** tab (🔒) and add the variables listed in `.env.example`:
    * `RUNPOD_API_KEY`
    * `RUNPOD_ENDPOINT_ID`
@@ -144,23 +144,24 @@ python src/main.py
 ```bash
 python -m unittest discover tests
 ```
-## How We Use Replit 
+## How We Use Replit
 
-Describe how your team used Replit. For example:
+Our team utilized Replit as the primary environment for rapid development, full-stack integration, and cloud hosting:
 
-- **Development:** Collaborative coding in a shared Repl using Multiplayer.
-- **Hosting:** The app is deployed with Replit Deployments at the Live Demo link above.
-- **Secrets:** API keys are stored in Replit Secrets, never in the code.
+- **Full-Stack Development:** Engineered the user interface (React/TypeScript) and API routing within Replit's unified workspace, leveraging built-in developer tools to accelerate component iteration and testing.
+- **Production Hosting & Deployment:** Deployed the live web application using Replit Deployments (`https://my-future-career-guidance.replit.app`), providing high availability and real-time accessibility for end-to-end user testing.
+- **Security & Secrets Management:** Managed all sensitive backend credentials—including RunPod API keys and serverless endpoint IDs—strictly through Replit Secrets, ensuring total isolation from the public codebase.
+- **Environment & Build Configuration:** Customized runtime dependencies, scripts, and build pipelines using `.replit` and configuration files for seamless continuous execution.
 
 📄 Proof of use: [submission/SDC2026_ByteMe_Replit_POU.pdf](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION/blob/main/submission/SDC2026_ByteMe_Replit_POU.pdf)
 
-## How We Use RunPod  
+## How We Use RunPod
 
-Describe how your team used RunPod. For example:
+Our project leverages RunPod’s serverless infrastructure to power scalable GPU compute and high-performance LLM inference:
 
-- **Workload:** Model inference (e.g. text generation, image processing) runs on a RunPod GPU.
-- **Setup:** `runpod/handler.py` is deployed as a **RunPod Serverless Endpoint**.
-- **Integration:** The Replit app sends requests to the endpoint using `RUNPOD_API_KEY` and `RUNPOD_ENDPOINT_ID`.
+- **Workload:** Executed LLM model inference (`deepseek-r1-distill-qwen-7b`) on RunPod GPU instances to dynamically process career assessments, generate skill gap analyses, and produce personalized learning pathways across 63 roles.
+- **Serverless Architecture:** Configured and deployed `runpod/handler.py` as a **RunPod Serverless Endpoint**, enabling automatically scaled, on-demand compute without maintaining persistent server overhead.
+- **API Integration:** Connected our Replit web application securely with RunPod using backend requests authenticated via `RUNPOD_API_KEY` and targeted through `RUNPOD_ENDPOINT_ID`.
 
 Example request:
 
@@ -175,13 +176,23 @@ curl -X POST https://api.runpod.ai/v2/rg88ptje13dkwa/runsync \
 
 ## Challenges & Learnings
 
-- What challenges did you face, and how did you overcome them?
-- What did your team learn?
+- **Challenges Faced & Solutions:**
+  - **Integrating Open-Source LLM into Live App:** Integrating the heavy `deepseek-r1-distill-qwen-7b` model into a real-time web application presented challenges with cold-start latency and response formatting. We solved this by hosting the model on RunPod Serverless GPU with custom handlers (`handler.py`) and implementing structured API routing to ensure smooth user feedback.
+  - **Multi-Disciplinary Skill Matching:** Initially, strict string matching caused 0% match rates for non-tech career roles (e.g., Medical, Arts, Business). We resolved this by expanding our taxonomy to support 63 distinct roles and implementing flexible fuzzy matching logic to accurately map cross-disciplinary user skill sets.
 
+- **Key Team Learnings:**
+  - **Cloud Workspace & Version Control:** Mastered cloud-based version control by seamlessly linking Visual Studio Code with GitHub, enabling automatic local-to-cloud workspace synchronization, commit workflows, and smooth deployment trigger pipelines.
+  - **Serverless AI Inference:** Learned how to optimize open-source LLM inference (`deepseek-r1-distill-qwen-7b`) on serverless GPU infrastructure for cost-effective, real-time assessment generation.
+  - **Secrets & Credentials Management:** Gained hands-on experience in securely decoupling configuration settings and API keys via environment variables and Replit Secrets.
+
+    
 ## Future Improvements
 
-- [ ] Improvement 1
-- [ ] Improvement 2
+- [ ] **Adaptive Dynamic Questioning:** Upgrade the skill test engine to dynamically adjust question difficulty based on real-time user answers.
+- [ ] **Interactive Milestone Tracking:** Introduce detailed analytics and visual progress dashboards for user learning pathways.
+- [ ] **AI Avatar Integration:** Incorporate an interactive 3D/2D AI Avatar mentor to conduct real-time conversational career mock interviews and personalized guidance.
+- [ ] **Multi-Language Support:** Expand localized skill assessments and career guidance to support broader global student demographics.
+- [ ] **Expanded Role Taxonomy:** Further expand the multi-disciplinary database beyond 63 roles to cover specialized niche fields and emerging industries.
 
 ## Team
 
