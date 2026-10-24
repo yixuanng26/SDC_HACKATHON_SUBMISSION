@@ -133,7 +133,7 @@ Response Rendered & Returned to User
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION.git](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION.git)
+git clone https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION.git
 cd SDC_HACKATHON_SUBMISSION
 
 # 2. Create and activate a virtual environment
