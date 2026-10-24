@@ -31,7 +31,7 @@
 | **Replit Project** | [https://replit.com/@yixuanng26/MyFuture-Career-Guidance](https://replit.com/@yixuanng26/MyFuture-Career-Guidance) |
 | **Live Demo** | [https://my-future-career-guidance.replit.app](https://my-future-career-guidance.replit.app) |
 | **Demo / Pitch Video** | [https://youtu.be/-wAynwGt6dQ](https://youtu.be/-wAynwGt6dQ) |
-| **Slide Deck** | [https://1drv.ms/p/c/df5b92a3986471d6/IQCIYMmPw3MeTJRLzvuOTqP_AYsKYN4tTFY7I2TVAbMbuWk?e=Q4G8b6](https://1drv.ms/p/c/df5b92a3986471d6/IQCIYMmPw3MeTJRLzvuOTqP_AYsKYN4tTFY7I2TVAbMbuWk?e=Q4G8b6) |
+| **Slide Deck** | [https://1drv.ms/p/c/df5b92a3986471d6/IQCIYMmPw3MeTJRLzvuOTqP_Ad2fwnipwvkzvoO4Je-Y6dg?e=JZ6vX0](https://1drv.ms/p/c/df5b92a3986471d6/IQCIYMmPw3MeTJRLzvuOTqP_Ad2fwnipwvkzvoO4Je-Y6dg?e=JZ6vX0) |
 | **RunPod Endpoint** | [https://api.runpod.ai/v2/rg88ptje13dkwa/runsync](mailto:https://api.runpod.ai/v2/rg88ptje13dkwa/runsync) |
 
 ---
