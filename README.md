@@ -30,8 +30,8 @@
 | **GitHub Repository** | [https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION](https://github.com/yixuanng26/SDC_HACKATHON_SUBMISSION) |
 | **Replit Project** | [https://replit.com/@yixuanng26/MyFuture-Career-Guidance](https://replit.com/@yixuanng26/MyFuture-Career-Guidance) |
 | **Live Demo** | [https://my-future-career-guidance.replit.app](https://my-future-career-guidance.replit.app) |
-| **Demo / Pitch Video** | `https://example.com/demo-video` |
-| **Slide Deck** | `https://example.com/slides` |
+| **Demo / Pitch Video** | [https://youtu.be/-wAynwGt6dQ](https://youtu.be/-wAynwGt6dQ) |
+| **Slide Deck** | ["C:\Users\yixuan\OneDrive\Documents\hackathon\MyFuture-Project-Overview.pptx"]("C:\Users\yixuan\OneDrive\Documents\hackathon\MyFuture-Project-Overview.pptx") |
 | **RunPod Endpoint** | [https://api.runpod.ai/v2/rg88ptje13dkwa/runsync](mailto:https://api.runpod.ai/v2/rg88ptje13dkwa/runsync) |
 
 ---
